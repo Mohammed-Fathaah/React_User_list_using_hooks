@@ -1,5 +1,6 @@
 import React, { useEffect,useState } from "react";
 import Userlist from "./Components/Userlist";
+import "./App.css";
 
 function App() {
   const [users,setUsers]=useState([]);
@@ -13,8 +14,8 @@ function App() {
 
   return (
     <>
-      <h1>User List</h1>
-      <UserList users={users} />
+      <h1 className="title">User List</h1>
+      <Userlist users={users} />
     </>
   );
 }
